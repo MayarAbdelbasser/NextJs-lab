@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-async function products() {
+async function Products() {
   const res = await fetch("https://fakestoreapi.com/products");
   const data = await res.json();
   return (
@@ -100,4 +100,4 @@ async function products() {
   );
 }
 
-export default products;
+export default Products;
